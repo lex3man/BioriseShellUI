@@ -1,5 +1,6 @@
 import { invoke } from "@tauri-apps/api/core";
 import { useState } from "react";
+import { Button } from "../ui/button";
 
 const CellsAction = () => {
   const [consoleOutput, setConsoleOutput] = useState<string>("");
@@ -23,12 +24,12 @@ const CellsAction = () => {
         }}
       >
         {Array.from({ length: 4 * 4 }, (_, i) => (
-          <button key={i} onClick={() => handleClick(i + 1)}>
+          <Button variant="outline" onClick={() => handleClick(i)}>
             {i + 1}
-          </button>
+          </Button>
         ))}
       </div>
-      <div>
+      <div className="m-auto">
         <p style={{ whiteSpace: 'pre-line' }}>{consoleOutput}</p>
       </div>
     </div>

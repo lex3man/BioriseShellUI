@@ -6,6 +6,7 @@ mod ipc;
 pub fn run() {
     tauri::Builder::default()
         .plugin(tauri_plugin_opener::init())
+        .plugin(tauri_plugin_blec::init())
         .invoke_handler(tauri::generate_handler![
             ipc::bluetooth::get_devices,
             ipc::bluetooth::drive_action
