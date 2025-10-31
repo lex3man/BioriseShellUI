@@ -27,6 +27,12 @@ const Bluetooth = () => {
   const [devices, setDevices] = useState<Device[]>([]);
 
   useEffect(() => {
+    const getActiveDevice = async () => {
+      const dev = await invoke<string>("get_device");
+      if (dev === "") return;
+      setSelectedDevice({ name: dev.split("::")[0], address: dev.split("::")[1] });
+    }
+
     const getDevices = async () => {
       const devices = await invoke<string[]>("get_devices");
       let devs: Device[] = [];
@@ -35,9 +41,11 @@ const Bluetooth = () => {
       });
       return devs;
     }
+
     getDevices().then(
       (devs) => { if (devs.length > 0) setDevices(devs) }
     );
+    getActiveDevice();
   }, []);
 
   return (
@@ -65,7 +73,9 @@ const Bluetooth = () => {
                           devices.find((priority) => priority.name === value) ||
                           null
                         )
-                        setOpen(false)
+                        invoke("set_device", { dev_name: value }).then(
+                          () => { setOpen(false) }
+                        )
                       }}
                     >
                       {device.name}

@@ -1,6 +1,5 @@
-    Blocking waiting for file lock on build directory
-  19.820218971s  INFO prepare_target{force=false package_id=uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri) target="uishell_lib"}: cargo::core::compiler::fingerprint: fingerprint error for uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri)/Check { test: false }/TargetInner { ..: lib_target("uishell_lib", ["staticlib", "cdylib", "rlib"], "/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri/src/lib.rs", Edition2021) }
-  19.821257201s  INFO prepare_target{force=false package_id=uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri) target="uishell_lib"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri/target/debug/.fingerprint/uishell-4a7a6cf12b8a397e/lib-uishell_lib`
+   0.434901906s  INFO prepare_target{force=false package_id=uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri) target="uishell_lib"}: cargo::core::compiler::fingerprint: fingerprint error for uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri)/Check { test: false }/TargetInner { ..: lib_target("uishell_lib", ["staticlib", "cdylib", "rlib"], "/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri/src/lib.rs", Edition2021) }
+   0.434944137s  INFO prepare_target{force=false package_id=uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri) target="uishell_lib"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri/target/debug/.fingerprint/uishell-4a7a6cf12b8a397e/lib-uishell_lib`
 
 Caused by:
     No such file or directory (os error 2)
@@ -25,8 +24,8 @@ Stack backtrace:
   16: std::rt::lang_start_internal
   17: _main
   18: <unknown>
-  19.847565504s  INFO prepare_target{force=false package_id=android-bluetooth-serial v0.1.1 target="android_bluetooth_serial"}: cargo::core::compiler::fingerprint: fingerprint error for android-bluetooth-serial v0.1.1/Check { test: false }/TargetInner { ..: lib_target("android_bluetooth_serial", ["lib"], "/Users/lex3man/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/android-bluetooth-serial-0.1.1/lib.rs", Edition2021) }
-  19.847581994s  INFO prepare_target{force=false package_id=android-bluetooth-serial v0.1.1 target="android_bluetooth_serial"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri/target/debug/.fingerprint/android-bluetooth-serial-f56e3841c226b7d7/lib-android_bluetooth_serial`
+   0.441741941s  INFO prepare_target{force=false package_id=android-bluetooth-serial v0.1.1 target="android_bluetooth_serial"}: cargo::core::compiler::fingerprint: fingerprint error for android-bluetooth-serial v0.1.1/Check { test: false }/TargetInner { ..: lib_target("android_bluetooth_serial", ["lib"], "/Users/lex3man/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/android-bluetooth-serial-0.1.1/lib.rs", Edition2021) }
+   0.441753689s  INFO prepare_target{force=false package_id=android-bluetooth-serial v0.1.1 target="android_bluetooth_serial"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri/target/debug/.fingerprint/android-bluetooth-serial-f56e3841c226b7d7/lib-android_bluetooth_serial`
 
 Caused by:
     No such file or directory (os error 2)
@@ -52,8 +51,8 @@ Stack backtrace:
   17: std::rt::lang_start_internal
   18: _main
   19: <unknown>
-  19.926801108s  INFO prepare_target{force=false package_id=uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri) target="uishell_lib"}: cargo::core::compiler::fingerprint: fingerprint error for uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri)/Check { test: true }/TargetInner { ..: lib_target("uishell_lib", ["staticlib", "cdylib", "rlib"], "/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri/src/lib.rs", Edition2021) }
-  19.926822506s  INFO prepare_target{force=false package_id=uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri) target="uishell_lib"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri/target/debug/.fingerprint/uishell-dbb5cf9c09381ff5/test-lib-uishell_lib`
+   0.504449540s  INFO prepare_target{force=false package_id=uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri) target="uishell_lib"}: cargo::core::compiler::fingerprint: fingerprint error for uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri)/Check { test: true }/TargetInner { ..: lib_target("uishell_lib", ["staticlib", "cdylib", "rlib"], "/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri/src/lib.rs", Edition2021) }
+   0.504465029s  INFO prepare_target{force=false package_id=uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri) target="uishell_lib"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri/target/debug/.fingerprint/uishell-dbb5cf9c09381ff5/test-lib-uishell_lib`
 
 Caused by:
     No such file or directory (os error 2)
@@ -78,8 +77,8 @@ Stack backtrace:
   16: std::rt::lang_start_internal
   17: _main
   18: <unknown>
-  19.928415422s  INFO prepare_target{force=false package_id=uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri) target="uishell"}: cargo::core::compiler::fingerprint: fingerprint error for uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri)/Check { test: false }/TargetInner { name: "uishell", doc: true, ..: with_path("/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri/src/main.rs", Edition2021) }
-  19.928433598s  INFO prepare_target{force=false package_id=uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri) target="uishell"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri/target/debug/.fingerprint/uishell-f4760682250a4648/bin-uishell`
+   0.505697366s  INFO prepare_target{force=false package_id=uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri) target="uishell"}: cargo::core::compiler::fingerprint: fingerprint error for uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri)/Check { test: false }/TargetInner { name: "uishell", doc: true, ..: with_path("/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri/src/main.rs", Edition2021) }
+   0.505707230s  INFO prepare_target{force=false package_id=uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri) target="uishell"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri/target/debug/.fingerprint/uishell-f4760682250a4648/bin-uishell`
 
 Caused by:
     No such file or directory (os error 2)
@@ -104,8 +103,8 @@ Stack backtrace:
   16: std::rt::lang_start_internal
   17: _main
   18: <unknown>
-  19.930146514s  INFO prepare_target{force=false package_id=uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri) target="uishell"}: cargo::core::compiler::fingerprint: fingerprint error for uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri)/Check { test: true }/TargetInner { name: "uishell", doc: true, ..: with_path("/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri/src/main.rs", Edition2021) }
-  19.930162020s  INFO prepare_target{force=false package_id=uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri) target="uishell"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri/target/debug/.fingerprint/uishell-b9404f7cfdfc9de9/test-bin-uishell`
+   0.506790043s  INFO prepare_target{force=false package_id=uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri) target="uishell"}: cargo::core::compiler::fingerprint: fingerprint error for uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri)/Check { test: true }/TargetInner { name: "uishell", doc: true, ..: with_path("/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri/src/main.rs", Edition2021) }
+   0.506799392s  INFO prepare_target{force=false package_id=uishell v0.1.0 (/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri) target="uishell"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/lex3man/Projects/FountCore/Biorise/UIshell/src-tauri/target/debug/.fingerprint/uishell-b9404f7cfdfc9de9/test-bin-uishell`
 
 Caused by:
     No such file or directory (os error 2)

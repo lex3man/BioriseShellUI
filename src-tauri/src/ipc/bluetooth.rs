@@ -1,5 +1,8 @@
 use android_bluetooth_serial::{get_bonded_devices, BluetoothDevice, BluetoothSocket};
 use std::{error::Error, io::Write};
+use tauri::{async_runtime::Mutex, State};
+
+use crate::AppState;
 
 #[tauri::command]
 pub async fn get_devices() -> Vec<String> {
@@ -11,6 +14,31 @@ pub async fn get_devices() -> Vec<String> {
             format!("{name}: {address}")
         })
         .collect()
+}
+
+#[tauri::command]
+pub async fn set_device(state: State<'_, Mutex<AppState>>, dev_name: String) -> Result<(), ()> {
+    let mut state = state.lock().await;
+    state.bt_device_name = Some(dev_name);
+    Ok(())
+}
+
+#[tauri::command]
+pub async fn get_device(state: State<'_, Mutex<AppState>>) -> Result<String, ()> {
+    let state = state.lock().await;
+    if let Some(dev_name) = &state.bt_device_name {
+        let devices = get_bonded_devices().unwrap().into_iter();
+        for dev in devices {
+            if dev.get_name().unwrap() == *dev_name {
+                return Ok(format!(
+                    "{}::{}",
+                    &dev_name,
+                    &dev.get_address().unwrap().to_string()
+                ));
+            }
+        }
+    };
+    Ok("".to_string())
 }
 
 #[tauri::command]
